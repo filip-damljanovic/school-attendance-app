@@ -16,7 +16,7 @@ var app = {
     for(let i = 0; i < this.students.length; i++) {
       let studentInput = this.students[i].getElementsByTagName('input');
       let daysMissedEl = this.students[i].getElementsByClassName('missed-col');
-      let daysMissed = daysMissedEl[0].innerHTML;
+      let daysMissed = 0;
 
       for(let i = 0; i < studentInput.length; i++) {
         if(studentInput[i].checked == false) {
